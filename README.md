@@ -198,7 +198,6 @@ prometheus.scrape "pihole" {
   targets    = [ 
     { "__address__" = "localhost:9167" }, 
   ] 
-	
   forward_to = [prometheus.remote_write.metrics1.receiver] 
 }
 ```
